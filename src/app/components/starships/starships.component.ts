@@ -12,12 +12,18 @@ export class StarshipsComponent implements OnInit {
 
   constructor(private starshipService: StarshipService) { }
 
-  ngOnInit() {
+  selectedStarship: Starship;
+  onSelect(starship: Starship): void {
+    this.selectedStarship = starship;
+  }
+
+  ngOnInit(): void {
     this.getStarships();
   }
 
+
   getStarships(): void {
     this.starshipService.getStarships()
-      .subscribe(data => {this.starships = data.results;});
+      .subscribe(data => { this.starships = data.results; });
   }
 }

@@ -1,1 +1,15 @@
-<p>starship-detail works!</p>
+<div *ngIf="starship">
+
+  <h2>{{starship.name | uppercase}} Details:</h2>
+  <div><span>Model: </span>{{starship.model}}</div>
+  <div><span>Manufacturer: </span>{{starship.manufacturer}}</div>
+  <div><span>Length: </span>{{starship.length}} meters</div>
+  <div><span>Speed: </span>{{starship.max_atmosphering_speed}} km/h</div>
+  <div><span>Crew: </span>{{starship.crew}}</div>
+  <div><span>Passengers: </span>{{starship.passengers}}</div>
+
+  <div>
+
+
+  </div>
+</div>

@@ -1,7 +1,10 @@
 <h2>Starships</h2>
 
-<ul class="heroes">
-  <li *ngFor="let starship of starships">
-    <span class="badge">{{starship.manufacturer}}</span> {{starship.name}}
+<ul class="starships">
+  <li *ngFor="let starship of starships" [class.selected]="starship === selectedStarship"
+  (click)="onSelect(starship)">
+    <span class="badge">{{starship.starship_class | lowercase}}</span> {{starship.name | uppercase}}
   </li>
 </ul>
+
+<app-starship-detail [starship]="selectedStarship"></app-starship-detail>
