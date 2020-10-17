@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { StarshipsComponent } from './starships/starships.component';
-import { StarshipDetailComponent } from './starship-detail/starship-detail.component';
+import { StarshipsComponent } from './components/starships/starships.component';
+import { StarshipDetailComponent } from './components/starship-detail/starship-detail.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { StarshipDetailComponent } from './starship-detail/starship-detail.compo
     StarshipDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
