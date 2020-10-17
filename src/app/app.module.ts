@@ -5,12 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { StarshipsComponent } from './components/starships/starships.component';
 import { StarshipDetailComponent } from './components/starship-detail/starship-detail.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StarshipsComponent,
-    StarshipDetailComponent
+    StarshipDetailComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Starship } from '../models/starship';
-import { Observable, of } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 import { ApiResult } from '../models/apiresult';
-
-// const httpOptions = {
-//   headers: new HttpHeaders({
-//     'Content-Type': 'application/json',
-//   }),
-// };
 
 @Injectable({
   providedIn: 'root'
