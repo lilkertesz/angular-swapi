@@ -1,5 +1,9 @@
 # SwapiApp
 
+A project created to get familiar with the basic features of Angular, it fetches data from: https://swapi.dev.
+
+![Main page](/screenshot.JPG?raw=true "Screenshot")
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
 
 ## Development server
